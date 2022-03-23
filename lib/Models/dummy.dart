@@ -1,0 +1,55 @@
+//import 'package:flutter/material.dart';
+import './News.dart';
+
+final List<News> data = [
+  News(
+    '1',
+    'BBC',
+    'Tommy Jim',
+    'Multiple Apple services suffer outages',
+    'The firm\'s system status page shows issues with services including iCloud, Apple Store, and podcasts.',
+    'url to main content of news',
+    'assets/images/tech.jpg',
+    'May 2, 2022',
+  ),
+  News(
+    '2',
+    'BBC 2',
+    'Tommy Jim',
+    'Multiple Apple services suffer outages',
+    'The firm\'s system status page shows issues with services including iCloud, Apple Store, and podcasts.',
+    'url to main content of news',
+    'assets/images/tech.jpg',
+    'May 2, 2022',
+  ),
+  News(
+    '3',
+    'BBC 3',
+    'Tommy Jim',
+    'Multiple Apple services suffer outages',
+    'The firm\'s system status page shows issues with services including iCloud, Apple Store, and podcasts.',
+    'url to main content of news',
+    'assets/images/tech.jpg',
+    'May 2, 2022',
+  ),
+  News(
+    '4',
+    'BBC 4',
+    'Tommy Jim',
+    'Multiple Apple services suffer outages',
+    'The firm\'s system status page shows issues with services including iCloud, Apple Store, and podcasts.',
+    'url to main content of news',
+    'assets/images/tech.jpg',
+    'May 2, 2022',
+  ),
+  News(
+    '5',
+    'BBC 5',
+    'Tommy Jim',
+    'Multiple Apple services suffer outages',
+    'The firm\'s system status page shows issues with services including iCloud, Apple Store, and podcasts.',
+    'url to main content of news',
+    'assets/images/tech.jpg',
+    'May 2, 2022',
+  ),
+];

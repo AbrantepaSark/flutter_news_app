@@ -22,7 +22,7 @@ class _NavScreenState extends State<NavScreen> {
 
   @override
   void initState() {
-    _pages = const [HomeScreen(), SearchScreen(), CategoryScreen()];
+    _pages = const [HomeScreen(), SearchPage(), CategoryScreen()];
     super.initState();
   }
 
@@ -35,34 +35,36 @@ class _NavScreenState extends State<NavScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: const Icon(Icons.developer_mode),
-        title: const Text(
-          'Dev-Connect',
-          style: TextStyle(fontFamily: 'Bellota'),
-        ),
-        centerTitle: true,
-        backgroundColor: const Color(0xF200008B),
-      ),
+      // appBar: AppBar(
+      //   leading: const Icon(Icons.developer_mode),
+      //   title: const Text(
+      //     'Dev-Connect',
+      //     style: TextStyle(fontFamily: 'Bellota'),
+      //   ),
+      //   centerTitle: true,
+      //   backgroundColor: const Color(0xF200008B),
+      // ),
       body: _pages[_selectedPageIndex],
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         onTap: _pageHandler,
-        unselectedItemColor: Colors.brown,
-        selectedItemColor: Colors.red,
+        unselectedItemColor: Color.fromARGB(255, 223, 151, 123),
+        selectedItemColor: Color.fromARGB(255, 184, 11, 11),
+        // showSelectedLabels: false,
+        // showUnselectedLabels: false,
         selectedFontSize: 12,
         currentIndex: _selectedPageIndex,
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home_rounded),
+            icon: Icon(Icons.home_rounded, size: 28),
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.search_outlined),
+            icon: Icon(Icons.search_outlined, size: 28),
             label: 'Search',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.sort),
+            icon: Icon(Icons.sort, size: 28),
             label: 'Category',
           ),
         ],

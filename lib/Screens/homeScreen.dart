@@ -1,5 +1,9 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
-import 'package:flutter_news_app/Models/News.dart';
+//import 'package:flutter_news_app/Models/News.dart';
+
+import '../Models/dummy.dart';
 
 import '../Containers/channelBadge.dart';
 import '../Containers/news.dart';
@@ -15,6 +19,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
     return SingleChildScrollView(
       child: Padding(
         padding: const EdgeInsets.fromLTRB(10, 30, 10, 10),
@@ -69,17 +74,24 @@ class _HomeScreenState extends State<HomeScreen> {
             const SizedBox(height: 10),
             lable('Top Stories'),
             const SizedBox(height: 10),
-            const SingleNews(source: '', title: '', date: ''),
-            const SizedBox(height: 15),
-            // const SingleNews(source: '', title: '', date: ''),
-            // const SizedBox(height: 15),
-            // const SingleNews(source: '', title: '', date: ''),
-            // const SizedBox(height: 15),
-            // const SingleNews(source: '', title: '', date: ''),
-            // const SizedBox(height: 15),
-            // const SingleNews(source: '', title: '', date: ''),
-            // const SizedBox(height: 15),
-            // const SingleNews(source: '', title: '', date: ''),
+            SingleNews(width: screenWidth, data: data[0]),
+            const SizedBox(height: 20),
+            SingleNews(width: screenWidth, data: data[1]),
+            const SizedBox(height: 20),
+            SingleNews(width: screenWidth, data: data[2]),
+            const SizedBox(height: 20),
+            // Column(
+            //   children: ,
+            //)
+            // ListView.builder(
+            //   itemCount: data.length,
+            //   itemBuilder: (context, i) => Column(
+            //     children: [
+            //       SingleNews(width: screenWidth, data: data[i]),
+            //       const SizedBox(height: 10),
+            //     ],
+            //   ),
+            // )
           ],
         ),
       ),
@@ -92,7 +104,7 @@ class _HomeScreenState extends State<HomeScreen> {
       height: 40,
       width: double.infinity,
       alignment: Alignment.centerLeft,
-      color: Colors.grey.shade200,
+      color: const Color.fromARGB(255, 235, 215, 215),
       child: Text(
         text,
         style: const TextStyle(fontWeight: FontWeight.bold),

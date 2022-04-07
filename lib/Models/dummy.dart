@@ -10,7 +10,7 @@ final List<News> data = [
     'The firm\'s system status page shows issues with services including iCloud, Apple Store, and podcasts.',
     'url to main content of news',
     'assets/images/tech.jpg',
-    'May 2, 2022',
+    'May 02, 2022',
   ),
   News(
     '2',
@@ -19,7 +19,7 @@ final List<News> data = [
     'Multiple Apple services suffer outages',
     'The firm\'s system status page shows issues with services including iCloud, Apple Store, and podcasts.',
     'url to main content of news',
-    'assets/images/tech.jpg',
+    'assets/images/science.jpg',
     'May 2, 2022',
   ),
   News(
@@ -29,7 +29,7 @@ final List<News> data = [
     'Multiple Apple services suffer outages',
     'The firm\'s system status page shows issues with services including iCloud, Apple Store, and podcasts.',
     'url to main content of news',
-    'assets/images/tech.jpg',
+    'assets/images/health.jpg',
     'May 2, 2022',
   ),
   News(
@@ -39,7 +39,7 @@ final List<News> data = [
     'Multiple Apple services suffer outages',
     'The firm\'s system status page shows issues with services including iCloud, Apple Store, and podcasts.',
     'url to main content of news',
-    'assets/images/tech.jpg',
+    'assets/images/sports.jpg',
     'May 2, 2022',
   ),
   News(
